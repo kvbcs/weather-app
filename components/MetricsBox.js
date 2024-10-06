@@ -1,17 +1,17 @@
 import { degToCompass } from "../services/converters";
 import {
-  getTime,
-  getAMPM,
-  getVisibility,
-  getWindSpeed,
+	getTime,
+	getAMPM,
+	getVisibility,
+	getWindSpeed,
 } from "../services/helpers";
 import { MetricsCard } from "./MetricsCard";
 import styles from "./MetricsBox.module.css";
 
 export const MetricsBox = ({ weatherData, unitSystem }) => {
-  return (
-    <div className={styles.wrapper}>
-      <MetricsCard
+	return (
+		<div className={styles.wrapper}>
+			{/* <MetricsCard
         title={"Humidity"}
         iconSrc={"/icons/humidity.png"}
         metric={weatherData.main.humidity}
@@ -57,7 +57,7 @@ export const MetricsBox = ({ weatherData, unitSystem }) => {
           weatherData.timezone
         )}
         unit={getAMPM(unitSystem, weatherData.sys.sunset, weatherData.timezone)}
-      />
-    </div>
-  );
+      /> */}
+		</div>
+	);
 };
